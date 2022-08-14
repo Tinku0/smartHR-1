@@ -105,6 +105,7 @@ import { JobsApplicationComponent } from './career/jobs-application/jobs-applica
 import { ManagedJobsComponent } from './jobs/managed-jobs/managed-jobs.component';
 import { AppliedJobsComponent } from './jobs/applied-jobs/applied-jobs.component';
 import { ProfileEditComponent } from './pages/profile-edit/profile-edit.component';
+import { LeaveHolidayDashboardComponent } from './leave-holiday-dashboard/leave-holiday-dashboard.component';
 
 
 
@@ -115,6 +116,7 @@ enableProdMode();
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
+  { path:'leave-dashboard',component:LeaveHolidayDashboardComponent },
   { path: 'employees', component: EmployeeMainComponent, children: [
       { path: '', redirectTo: 'all-employees', pathMatch: 'full' },
       { path: 'all-employees', component: AllEmployeesComponent },
@@ -214,8 +216,6 @@ const routes: Routes = [
   { path: 'career/job-details', component: JobsDetailsComponent },
   { path: 'career/job-application', component: JobsApplicationComponent },
   { path: '**', redirectTo: 'pages/login' }
-  
-  
 ];
 
 
@@ -310,7 +310,8 @@ const routes: Routes = [
     JobsApplicationComponent,
     ManagedJobsComponent,
     AppliedJobsComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    LeaveHolidayDashboardComponent
     ],
   imports: [
     BrowserModule,
