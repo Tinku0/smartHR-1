@@ -78,7 +78,8 @@ export class AllEmployeesComponent implements OnInit {
       userName:'',
       password:'',
       cPassword:'',
-      joinDate:{formatted : ""}
+      joinDate:{formatted : ""},
+      reportingmanager:''
     }
     $('#add_employee').modal('show');
   }

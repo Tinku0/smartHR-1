@@ -227,8 +227,17 @@
                 </span>
               </div>
             </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="control-label">Reporting Manager<span class="text-danger m-l-5">*</span></label>
+                <select class="select form-control" [(ngModel)]="addEmp.reportingmanager" name="reportingmanager" #designation="ngModel" required>
+                  <option value="Narayan">Narayan</option>
+                  <option value="Prudhvi">Prudhvi</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="table-responsive m-t-15">
+          <!-- <div class="table-responsive m-t-15">
             <table class="table table-striped custom-table">
               <thead>
                 <tr>
@@ -266,7 +275,7 @@
 
               </tbody>
             </table>
-          </div>
+          </div> -->
           <div class="m-t-20 text-center">
               <div *ngIf="addEmployeeValidation" class="alert alert-info m-t-10">
                   <strong>Warning!</strong> Must Fill all Mandatory Fields.

@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppService {
-  updateProfile(data){
-    
-    this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]`)
 
-  }
+  constructor(){}
+  // updateProfile(data){
+    
+  //   this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]`,data)
+
+  // }
 
   public employees = [
     {
@@ -821,6 +822,5 @@ export class AppService {
         }
       ]
      
-  constructor() { }
 
 }
